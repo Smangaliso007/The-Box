@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Box Blog - Trial 3</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="thebox-BLOG/Views_Code/Trials/Templates/startbootstrap-scrolling-nav-gh-pages-BlueB/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- W3 Schools CSS -->
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="thebox-BLOG/Views_Code/Trials/Templates/startbootstrap-scrolling-nav-gh-pages-BlueB/css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="thebox-BLOG/Views_Code/Trials/Templates/startbootstrap-scrolling-nav-gh-pages-BlueB/css/fontawesome-free/css/all.css" rel="stylesheet">
+
+    <!-- Author CSS -->
+    <link rel="stylesheet" href="thebox-BLOG/Views_Code/Trials/Templates/startbootstrap-scrolling-nav-gh-pages-BlueB/css/box-blog.css">
+
+    <!-- Carousel Js By Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body id="page-top" style="background-image: linear-gradient(to right, #001421, #437cd9);">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-white text-black-50 fixed-top" id="mainNav"
+     style="background-image: linear-gradient(to right, #001421, #437cd9);font-size: 15px;height: 50px;padding: 0;margin-bottom: 0;border: none;">
+    <div class="container-fluid">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <img src="images/Logo.png" alt="logo" height="20" width="60"/> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-nav mr-auto"  id="empty_space" style="width: 83%;">
+            <li class="nav-item"></li>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive" style="width: 17%;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger text-white" href="#about">Home</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link js-scroll-trigger text-white" href="#services">Articles</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link js-scroll-trigger text-white" href="#contact">About</a>
+                </li>
+                <li class="nav-item ml-4">
+                    <a class="nav-link js-scroll-trigger" href="#contact">
+                        <img src="images/Folder.jpg" alt="play_face" height="35" width="35"
+                             style="display: block;border-radius: 50%;"/>
+                        <!-- Play -->
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Player -->
+<section id="play_me" style="background-image: linear-gradient(to right, #001421, #437cd9);padding-top: 20px;padding-bottom: 0;">
+    <div class="container-fluid mx-auto" style="background-color: inherit;">
+        <div id="myCarousel" class="carousel slide mx-auto" data-ride="carousel" data-interval="false" style="width: 500px;">
+            <!-- Indicators -->
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner mx-auto" style="width: 200px;border-radius: 50%;border-style: double;border-color: white;">
+                <div class="item active">
+                    <img src="thebox-BLOG/Views_Code/albums/Chet Faker/chet-faker-art.jpg" alt="chet" style="border-radius: 50%;height: 200px;width: 200px;"/>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Chet Faker</h5>
+                        <p>Gold</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/Folder.jpg" alt="cole" style="border-radius: 50%;height: 200px;width: 200px;"/>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>J-Cole</h5>
+                        <p>Revenge of the Dreamers</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="AlbumArtSmall.jpg" alt="cole_2" style="border-radius: 50%;height: 200px;width: 200px;"/>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>J-Cole</h5>
+                        <p>Friday Night Lights</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Music Player Section -->
+<section id="player" style="background-image: linear-gradient(to right, #001421, #437cd9);padding-top: 20px;padding-bottom: 0;">
+    <!-- Song Indicator -->
+    <div class="container-fluid ml-auto" style="background-color: inherit;width: 600px;display: none;">
+        <div class="col-sm-12" style="background-color: inherit;border-radius: 25px;padding-left: 0;">
+            <button ondrag="my_song()" type="button" id="dot"
+                    style="display: block;width: 10px;height: 10px; border: none;border-radius: 50%;position: relative;">
+            </button>
+        </div>
+    </div>
+    <!-- Buttons -->
+    <div class="container-fluid ml-auto" style="background-color: inherit;width: 600px;padding-top: 5px;">
+        <div class="row">
+            <audio preload="metadata" class="song">
+                <source src="https://s21.aconvert.com/convert/p3r68-cdx67/on1on-x1m66.mp3" type="audio/mpeg">
+            </audio>
+            <audio preload="metadata" class="song">
+                <source src="https://s21.aconvert.com/convert/p3r68-cdx67/ntsx9-gzlaa.mp3" type="audio/mpeg">
+            </audio>
+            <audio preload="metadata" class="song">
+                <source src="https://s21.aconvert.com/convert/p3r68-cdx67/mlmak-ey2nq.mp3" type="audio/mpeg">
+            </audio>
+            <div class="col-lg-2 ml-5" id="prev">
+                <button onclick="prev_Audio()" id="prev-buton" type="button" style="background-color: inherit;border: none">
+                    <i class="fas fa-fast-backward" style="font-size: 30px"></i>
+                </button> <!-- Previous -->
+            </div>
+            <div class="col-lg-2 ml-auto" id="prev_5">
+                <button onclick="backwd()" type="button" style="background-color: inherit;border: none;">
+                    <i class="fas fa-step-backward" style="font-size: 30px;"></i>
+                </button>
+            </div>
+            <div class="col-lg-2 ml-auto" id="play-pause">
+                <button onclick="play_Audio()" id="play-buton" type="button" style="background-color: inherit;border: none;display: block;">
+                    <i class="fas fa-play" id="play" style="display: block;font-size: 30px"></i>
+                </button> <!-- Play -->
+                <button onclick="pause_Audio()" id="pause-buton" type="button" style="background-color: inherit;border: none;display: none;">
+                    <i class="fas fa-pause" id="pause" style="display: none;font-size: 30px"></i>
+                </button> <!-- Pause -->
+            </div>
+            <div class="col-lg-2 ml-auto" id="fwd_5">
+                <button onclick="fast_fwd()" type="button" style="background-color: inherit;border: none;">
+                    <i class="fas fa-step-forward" style="font-size: 30px;"> </i>
+                </button>
+            </div>
+            <div class="col-lg-2 ml-auto" id="next">
+                <button onclick="next_Audio()" id="next-buton" type="button" style="background-color: inherit;border: none">
+                    <i class="fas fa-fast-forward" style="font-size: 30px"></i>
+                </button> <!-- Next -->
+            </div>
+        </div> <!-- Button Row -->
+    </div>
+</section>
+<!-- News Section -->
+<section id="about" style="background-color: #373b41;padding-top: 20px;">
+    <div class="container-fluid ml-lg-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="row">
+                    <img src="thebox-BLOG/Views_Code/albums/Chet Faker/chet-faker-art.jpg" alt="album_art" height="300"
+                                      width="500"/>
+                </div>
+            </div>
+            <div class="col-lg-6 mx-auto text-white">
+                <h2>About this page</h2>
+                <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+                <ul>
+                    <li>Clickable nav links that smooth scroll to page sections</li>
+                    <li>Responsive behavior when clicking nav links perfect for a one page website</li>
+                    <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
+                    <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PLAYER Buttons -->
+<script>
+    z = document.getElementsByTagName("audio");     //Get Array of SONGS
+    y = 0;                                          //Set Counter
+    i = z[y];                                       //Set i = Song in Songs USING COUNTER ABOVE
+    t = 10;                                          //SECONDS FORWARD/BACKWARD
+
+    i.ended = function () {audio_end()};
+
+
+    function audio_end() {
+        document.getElementById("pause").style.display = "none";
+        document.getElementById("play").style.display = "block";
+        document.getElementById("pause-buton").style.display = "none";
+        document.getElementById("play-buton").style.display = "block";
+    }
+
+    function play_Audio() {
+        i.play();
+        document.getElementById("play").style.display = "none";
+        document.getElementById("pause").style.display = "block";
+        document.getElementById("play-buton").style.display = "none";
+        document.getElementById("pause-buton").style.display = "block";
+        document.getElementById("dot").style.animationPlayState = "running";
+
+
+    }
+
+    function pause_Audio() {
+        i.pause();
+        document.getElementById("pause").style.display = "none";
+        document.getElementById("play").style.display = "block";
+        document.getElementById("pause-buton").style.display = "none";
+        document.getElementById("play-buton").style.display = "block";
+    }
+    function next_Audio() {
+        pause_Audio();
+        t = i.currentTime = 0;
+        y++;
+        i = z[y];
+        play_Audio();
+
+    }
+
+    function prev_Audio() {
+        pause_Audio();
+        t = i.currentTime = 0;
+        y--;
+        i = z[y];
+        play_Audio();
+    }
+
+    function backwd() {
+        i.currentTime = i.currentTime - t;
+        play_Audio();
+    }
+
+    function fast_fwd () {
+        i.currentTime = i.currentTime + t;
+        play_Audio();
+    }
+
+    function myFunction() {
+        var x = i.readyState;
+        document.getElementById("demo").innerHTML = x + t;
+    }
+</script>
+</body>
+</html>
