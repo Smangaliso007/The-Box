@@ -1,0 +1,33 @@
+#dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 50%;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-play-state: paused;
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {
+        left: 0;
+        top: 0;
+    }
+    to {
+        left: 600px;
+    }
+}
+
+/* Standard syntax */
+@keyframes example {
+        from {
+            left: 0;
+            top: 0;
+        }
+        to {
+            left: 600px;
+        }
+}
